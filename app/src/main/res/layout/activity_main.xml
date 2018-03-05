@@ -22,7 +22,7 @@
                 android:gravity="center_horizontal"
                 android:paddingBottom="14dp"
                 android:paddingTop="14dp"
-                android:text="Team A"
+                android:text="@string/team_a"
                 android:textAlignment="gravity"
                 android:textColor="#616161"
                 android:textSize="28sp" />
@@ -33,7 +33,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif-light"
                 android:paddingBottom="10dp"
-                android:text="0"
+                android:text="@string/starting_score"
                 android:textAlignment="center"
                 android:textColor="#000000"
                 android:textSize="56sp" />
@@ -45,7 +45,7 @@
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="24dp"
                 android:onClick="threePointsA"
-                android:text="+3 Points" />
+                android:text="@string/add3points" />
 
             <Button
                 android:layout_width="match_parent"
@@ -54,7 +54,7 @@
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="24dp"
                 android:onClick="twoPointsA"
-                android:text="+2 Points" />
+                android:text="@string/add2points" />
 
             <Button
                 android:layout_width="match_parent"
@@ -62,7 +62,7 @@
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="24dp"
                 android:onClick="onePointA"
-                android:text="+1 Point" />
+                android:text="@string/add1point" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -77,7 +77,7 @@
                     android:paddingLeft="4dp"
                     android:fontFamily="cursive"
                     android:gravity="center_horizontal"
-                    android:text="Fouls: "
+                    android:text="@string/fouls"
                     android:textAlignment="gravity"
                     android:textColor="#616161"
                     android:textSize="28sp" />
@@ -93,7 +93,7 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-light"
                     android:paddingLeft="4dp"
-                    android:text="0"
+                    android:text="@string/starting_fouls"
                     android:textAlignment="center"
                     android:textColor="#000000"
                     android:textSize="28sp" />
@@ -106,7 +106,7 @@
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="24dp"
                 android:onClick="addFoulA"
-                android:text="+1 Foul" />
+                android:text="@string/add1foul" />
 
 
         </LinearLayout>
@@ -130,7 +130,7 @@
                 android:gravity="center_horizontal"
                 android:paddingBottom="14dp"
                 android:paddingTop="14dp"
-                android:text="Team B"
+                android:text="@string/team_b"
                 android:textAlignment="gravity"
                 android:textSize="28sp" />
 
@@ -140,7 +140,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif-light"
                 android:paddingBottom="10dp"
-                android:text="0"
+                android:text="@string/starting_score"
                 android:textAlignment="center"
                 android:textColor="#000000"
                 android:textSize="56sp" />
@@ -152,7 +152,7 @@
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="24dp"
                 android:onClick="threePointsB"
-                android:text="+3 Points" />
+                android:text="@string/add3points" />
 
             <Button
                 android:layout_width="match_parent"
@@ -161,7 +161,7 @@
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="24dp"
                 android:onClick="twoPointsB"
-                android:text="+2 Points" />
+                android:text="@string/add2points" />
 
             <Button
                 android:layout_width="match_parent"
@@ -169,7 +169,7 @@
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="24dp"
                 android:onClick="onePointB"
-                android:text="+1 Point" />
+                android:text="@string/add1point" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -184,7 +184,7 @@
                     android:paddingLeft="4dp"
                     android:fontFamily="cursive"
                     android:gravity="center_horizontal"
-                    android:text="Fouls: "
+                    android:text="@string/fouls"
                     android:textAlignment="gravity"
                     android:textColor="#616161"
                     android:textSize="28sp" />
@@ -200,7 +200,7 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-light"
                     android:paddingLeft="4dp"
-                    android:text="0"
+                    android:text="@string/starting_fouls"
                     android:textAlignment="center"
                     android:textColor="#000000"
                     android:textSize="28sp" />
@@ -213,10 +213,18 @@
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="24dp"
                 android:onClick="addFoulB"
-                android:text="+1 Foul" />
+                android:text="@string/add1foul" />
         </LinearLayout>
     </LinearLayout>
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="48dp"
+        android:onClick="resetFouls"
+        android:text="@string/reset_fouls" />
     <Button
         android:id="@+id/reset_counter"
         android:layout_width="match_parent"
@@ -226,14 +234,7 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:onClick="resetScoreFouls"
-        android:text="Reset Counter" />
+        android:text="@string/reset_counter" />
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/layout"
-        android:layout_centerHorizontal="true"
-        android:layout_marginRight="48dp"
-        android:onClick="resetFouls"
-        android:text="Reset Fouls" />
+
 </RelativeLayout>

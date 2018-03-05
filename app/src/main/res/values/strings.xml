@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">Basketball Court Counter</string>
+    <string name="team_a">Team A</string>
+    <string name="starting_score">0</string>
+    <string name="add3points">+3 Points</string>
+    <string name="add2points">+2 Points</string>
+    <string name="add1point">+1 Point</string>
+    <string name="fouls">Fouls:</string>
+    <string name="starting_fouls">0</string>
+    <string name="add1foul">+1 Foul</string>
+    <string name="team_b">Team B</string>
+    <string name="reset_counter">Reset Counter</string>
+    <string name="reset_fouls">Reset Fouls</string>
 </resources>
